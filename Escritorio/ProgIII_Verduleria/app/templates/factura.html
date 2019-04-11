@@ -1,0 +1,16 @@
+<html>
+	
+	<body>
+			
+			<h2>Factura</h2>
+
+			<ul>
+				{% for a in factura_cliente %}
+					<li>{{a.cliente.apellido}} {{a.cliente.nombre}} {{a.producto.nombre}}</li>
+				{% endfor %}
+
+			</ul>
+				
+	</body>
+
+</html>

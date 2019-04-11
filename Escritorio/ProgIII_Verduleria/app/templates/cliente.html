@@ -1,0 +1,16 @@
+<html>
+	
+	<body>
+			
+			<h2>Cliente</h2>
+
+			<ul>
+				{% for a in mi_cliente %}
+					<li>{{a.nombre}} {{a.apellido}}  <a href = '{% url 'ver_clientes' a.dni %}' >Ver Mas</a></li>
+				{% endfor %}
+
+			</ul>
+				
+	</body>
+
+</html>

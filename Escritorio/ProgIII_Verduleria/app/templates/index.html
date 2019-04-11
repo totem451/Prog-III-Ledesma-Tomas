@@ -1,0 +1,16 @@
+<html>
+	
+	<body>
+			
+			<h2>Clasificaciones</h2>
+
+			<ul>
+				{% for a in todas_las_clasificaciones %}
+					<li>{{a.tipo}} <a href = '{% url 'ver_clasificaciones' a.id %}' >Ver Mas</a></li>
+				{% endfor %}
+			</ul>
+
+
+	</body>
+
+</html>

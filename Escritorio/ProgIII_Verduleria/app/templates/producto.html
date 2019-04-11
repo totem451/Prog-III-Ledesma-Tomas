@@ -1,0 +1,15 @@
+<html>
+	
+	<body>
+			
+			<h2>Productos</h2>
+
+			<ul>
+				{% for a in todos_los_productos %}
+					<li>{{a.nombre}} <a href = '{% url 'ver_productos' a.id %}' >Ver Mas</a></li>
+				{% endfor %}
+			</ul>
+
+	</body>
+
+</html>
